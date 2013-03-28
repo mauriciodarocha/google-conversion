@@ -84,7 +84,7 @@
             url: "/produto/sku/"+sku,
             success: function (data) 
             {
-              gc_checkout.ids.push(""+data[0].Id);
+              gc_checkout.ids.push(""+data[0].IdProduct);
               if(gc_checkout.ids.length===gc_checkout.skus.length)
                 gc_checkout.set.params();
             }
